@@ -1,7 +1,7 @@
 flask==2.2.3
 ultralytics==8.0.65
-torch==2.0.1+cu118
-torchvision==0.15.2+cu118
+torch==2.0.1+cpu  # Use CPU-only version for compatibility
+torchvision==0.15.2+cpu
 gunicorn
 pillow
 python-dotenv
