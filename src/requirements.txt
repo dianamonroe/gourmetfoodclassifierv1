@@ -1,5 +1,7 @@
-flask
+flask==2.2.3
+ultralytics==8.0.65
+torch==2.0.1+cu118  # Adjust based on your system (CUDA version or CPU-only)
+torchvision==0.15.2+cu118
 pillow
-python
-ultralytics
-PIL
+gunicorn  # For deploying Flask on Render
+pip==25.0
