@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Classify Bread</title>
+</head>
+<body>
+    <h1>Upload an Image</h1>
+    <form method="POST" enctype="multipart/form-data">
+        <input type="file" name="image" accept="image/*">
+        <button type="submit">Classify</button>
+    </form>
+    {% if label %}
+        <h2>Prediction:</h2>
+        <p>This image is classified as <strong>{{ label }}</strong> with {{ confidence|round(2) }}% confidence.</p>
+        <img src="{{ image }}" alt="Uploaded Image">
+    {% endif %}
+</body>
+</html>
